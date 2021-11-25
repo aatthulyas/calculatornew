@@ -1,0 +1,51 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <!-- input field  -->
+        <label class="heading">Calculator</label>
+        <div class="text">
+            <input type="text" name="number" id="result" placeholder="result">
+        </div>
+        <!-- buttons -->
+        <div class="grid-container">
+            <!-- row 1 -->
+            <button class="grid-item plus" onclick="displayValue('+')">+</button>
+            <button class="grid-item minus" onclick="displayValue('-')">-</button>
+            <button class="grid-item multiply" onclick="displayValue('*')">*</button>
+            <button class="grid-item divide" onclick="displayValue('/')">/</button>
+            <!-- row 2 -->
+            <button class="grid-item" onclick="displayValue('7')">7</button>
+            <button class="grid-item" onclick="displayValue('8')">8</button>
+            <button class="grid-item" onclick="displayValue('9')">9</button>
+            <button class="grid-item equal" onclick="evaluateExpression()">=</button>
+            <!-- row 3 -->
+            <button class="grid-item" onclick="displayValue('4')">4</button>
+            <button class="grid-item" onclick="displayValue('5')" >5</button>
+            <button class="grid-item" onclick="displayValue('6')">6</button>
+            <!-- row 4 -->
+            <button class="grid-item"onclick="displayValue('1')">1</button>
+            <button class="grid-item" onclick="displayValue('2')">2</button>
+            <button class="grid-item" onclick="displayValue('3')">3</button>
+            <!-- row 5 -->
+            <button class="grid-item" onclick="displayValue('0')">0</button>
+            <button class="grid-item" onclick="displayValue('.')">.</button>
+            <button class="grid-item" onclick="clearBox()">C</button>
+
+        </div>
+    </div>
+</body>
+<script src="./script.js">
+
+
+</script>
+<!-- first html works (script after body given) -->
+</html>
